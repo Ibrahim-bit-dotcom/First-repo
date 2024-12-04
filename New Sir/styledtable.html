@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Styled HTML Table with Borders and Spacing</title>
+    <style>
+    table{
+        width: 50px;   
+        margin: 20px auto;
+        border-collapse: separate;
+        border-spacing: 10px;
+        background-color: bisque;
+        box-shadow: 10px 10px 10px black;
+    }
+    caption{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    th{
+        background-color: coral;
+        color: bisque;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid #0056b3;
+    }
+    td{
+        background-color: aquamarine;
+        padding: 12px;
+        text-align: center;
+        border: 1px solid lightgrey;
+    }
+    tr:nth-child(even) td{
+        background-color: pink;
+    }
+    tfoot td{
+        background-color: aquamarine;
+        font-style: italic;
+        text-align: center;
+    }
+
+    </style>
+    </head>
+    <body>
+        <!-- Start of the table -->
+        <table>
+            <!-- Caption for the table -->
+            <caption>Employee Information</caption>
+            
+            <!-- Grouping header content -->
+            <thead>
+                <tr>
+                    <th align="left">Employee ID</th>
+                    <th align="center">Name</th>
+                    <th align="right">Department</th>
+                </tr>
+            </thead>
+    
+            <!-- Grouping main body content -->
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>Ahmed</td>
+                    <td>HR</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Ali</td>
+                    <td>Finance</td>
+                </tr>
+                <tr>
+                    <td>103</td>
+                    <td>Sara</td>
+                    <td>IT</td>
+                </tr>
+                <tr>
+                    <!-- Using COLSPAN to merge columns -->
+                    <td colspan="2">Total Employees</td>
+                    <td>2</td>
+                </tr>
+            </tbody>
+    
+            <!-- Grouping footer content -->
+            <tfoot>
+                <tr>
+                    <!-- Using ROWSPAN to merge rows -->
+                    <td rowspan="2">Note</td>
+                    <td colspan="2">All data is up to date.</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Last updated: Dec 2024</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+    </html> 
+</body>
+</html>

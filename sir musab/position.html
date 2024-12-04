@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+           border: 2px solid red;
+           /* trbl */
+           padding: 4px ;
+        }
+        .first{
+            border: 2px solid black;
+            margin: 2px; 
+            height: 100px;
+            background-color: aqua;
+            width: 200px;
+            top: 0px;
+            position: absolute;
+        }
+        .second{
+            border: 2px solid black;
+            margin: 2px;
+            height: 100px;
+            background-color: aqua;
+            width: 200px;
+            position: relative;
+            z-index: 1;
+        }
+        .third{
+            border: 2px solid black;
+            margin: 2px;
+            height: 100px;
+            background-color: aqua;
+            width:200px;
+        }
+        .fourth{
+            border: 2px solid black;
+            margin: 2px;
+            height: 100px;
+            background-color: aqua;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="first">1</div>
+        <div class="second">1</div>
+        <div class="third">1</div>
+        <div class="fourth">1</div>
+    </div>
+</body>
+</html>

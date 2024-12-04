@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GSAP Animation Example</title>
+  <!-- Include the GSAP library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <style>
+    /* Styling for the box */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #3498db;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translateY(-50%);
+    }
+  </style>
+</head>
+<body>
+  <!-- Box to animate -->
+  <div class="box"></div>
+
+  <script>
+    // GSAP Animation code
+    gsap.to(".box", {
+      duration: 2, // Duration of the animation in seconds
+      x: 400, // Move the box 400px along the x-axis
+      backgroundColor: "#e74c3c", // Change background color to red
+      rotation: 360, // Rotate the box 360 degrees
+      ease: "power2.inOut", // Easing function for smoothness
+    });
+  </script>
+</body>
+</html>

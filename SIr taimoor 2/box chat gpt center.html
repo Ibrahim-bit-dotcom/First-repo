@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation Example</title>
+  <style>
+    /* Box Styling */
+    .box {
+      width: 50px;
+      height: 50px;
+      background-color: burlywood;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%); /* Center horizontally */
+    }
+
+    /* Keyframes animation */
+    @keyframes movbox {
+      0% {
+        top: 0%;
+        left: 50%;
+        background-color: burlywood;
+      }
+      25% {
+        top: 25%;  /* Move the box to 25% of the height */
+        left: 50%;
+        background-color: burlywood;
+      }
+      50% {
+        top: 50%; /* Move the box to the center of the page */
+        left: 50%;
+        background-color: aqua;
+        transform: translateX(-50%); /* Keep horizontal centering */
+      }
+      75% {
+        top: 75%;  /* Move the box to 75% of the height */
+        left: 50%;
+        background-color: rgb(231, 131, 8);
+        transform: translateX(-50%); /* Keep horizontal centering */
+      }
+      100% {
+        top: 100%; /* Move the box to the bottom */
+        left: 50%;
+        background-color: burlywood;
+        transform: translateX(-50%); /* Keep horizontal centering */
+      }
+    }
+
+    /* Apply animation to the box */
+    .box {
+      animation: movbox 4s infinite ease-in-out;  /* Repeat infinitely with smooth ease */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Box element -->
+  <div class="box"></div>
+
+</body>
+</html>

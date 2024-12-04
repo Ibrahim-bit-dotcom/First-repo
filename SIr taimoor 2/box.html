@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box{
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        animation: movbox 5s infinite;
+    }
+    /* @keyframes movbox{
+        0%{
+            top: 0;
+            left: 0;          
+        }
+        25%{
+            top: 0;
+            left: calc(100% - 50px);
+        }
+        50%{
+            top: calc(100% - 50px);
+            left: calc(100% - 50px);
+            background-color: aqua;
+        }
+        75%{
+            top: calc(100% - 50px);
+            left: 0;
+            background-color: rgb(231, 131, 8);
+        }
+        100%{
+            top: 0;
+            left: 0;
+            background-color: burlywood;
+        } */
+
+        @keyframes movbox{
+        0%{
+            top: 100%;
+            left: 100%;          
+        }
+        /* 25%{
+            top: 0;
+            left: calc(100% - 50px);
+        } */
+        50%{
+            top: 0;
+            left: calc(100% - 50 px);
+            background-color: aqua;
+        }
+        /* 75%{
+            top: 0;
+            left: 0;
+            background-color: rgb(231, 131, 8);
+        } */
+        100%{
+            top: 0;
+            left: 0;
+            background-color: burlywood;
+        }
+    }
+</style>
+<body>
+<div class="box"></div>
+</body>
+</html>

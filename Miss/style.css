@@ -1,0 +1,27 @@
+p {
+    color: brown;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 30px;
+    color: blueviolet;
+    font-family: 'Franklin Gothic Medium';
+}
+.red{
+    color: indianred;
+    background-color: blue;
+}
+#element{
+    color: aqua;
+    border: 3px solid; color: yellow;
+    background-color: orange;
+}
+body{
+    background-image: pic 3 caps med.jfif;
+}
+h1{
+    font-style: oblique;
+    font-size: xx-large;
+
+}
