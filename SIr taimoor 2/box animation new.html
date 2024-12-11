@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .boxmodel{
+        width: 200px;
+        height: 200px;
+        background-color: beige;
+        border: 5px solid lightcoral;
+        padding: 20px;
+        margin: 20px;
+    }
+    .container1{
+        overflow: hidden;
+    }
+    .floatleft,.floatright{
+        width: 45%;
+        padding: 10px;
+        color: white;
+        margin: 10px;
+}
+.floatleft{
+    float: left;
+    background-color: blue;
+}
+.floatright{
+    float: right;
+    background-color: blueviolet;
+}
+.container2{
+    position: relative;
+    height: 200px;
+    margin: 20px 0;
+}
+.absbox{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 150px;
+    background-color: aqua;
+    color: blue;
+    line-height: 150px;
+    text-align: center;
+}
+.fixedbox{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 150px;
+    width: 150px;
+    background-color: bisque;
+    color: blue;
+    text-align: center;
+    line-height: 150px;
+}
+.animationbox{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: aquamarine;
+    animation: spin 0.5s linear infinite;
+    
+}
+@keyframes spin{
+   0%{transform: rotate(0deg);}
+   50%{transform: rotate(360deg);background-color: red;}
+   100%{transform: rotate(-360deg);background-color: yellow;}
+}
+.transitionbox{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background-color: green;
+    transition: background-color 1s ease, transform 1s ease;
+}
+.transitionbox:hover{
+    background-color: blue;
+    transform: scale(2);
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin: 20px 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+.gitem{
+    background-color: bisque;
+    color: blueviolet;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+}
+.fitem{
+    background-color: chocolate;
+    color: azure;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+}
+
+@media(max-width: 500px){
+    /* .grid{
+        height: 80px;
+        width: 100px;
+    } 
+.item{
+    height: 100px;
+    width: 100px;   
+} */
+ .fitem{
+    width: 100px;
+    height: 100px;
+    line-height: 80px;
+ }
+.gitem{
+    height: 80px;
+    padding: 10px;
+}
+}
+
+</style>
+</head>
+<body>
+    
+
+</div>
+<div class="container2">
+    <div class="absbox">Absolute Box</div>
+    <div class="fixedbox">Fixed Box</div>
+</div>
+<div class="boxmodel">Box Model</div>
+<div class="container1">   
+    <div class="floatleft">Float left</div>
+    <div class="floatright">Float right</div>
+</div>
+<div class="flex">
+    <div class="fitem">Item1</div>
+    <div class="fitem">Item2</div>
+    <div class="fitem">Item3</div>
+    <div class="fitem">Item4</div>
+</div>
+<div class="grid">
+    <div class="gitem">Item1</div>
+    <div class="gitem">Item2</div>
+    <div class="gitem">Item3</div>
+    <div class="gitem">Item4</div>
+    <div class="gitem">Item5</div>
+    <div class="gitem">Item6</div>
+</div>
+    <div class="transitionbox"></div>    
+    <div class="animationbox"></div>
+</body>
+</html>
